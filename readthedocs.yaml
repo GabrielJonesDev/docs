@@ -1,0 +1,32 @@
+# .readthedocs.yaml
+# Leggi il file di configurazione di Documenti
+# Vedi https://docs.readthedocs.io/en/stable/config-file/v2.html per i dettagli
+
+# Necessario
+versione: 2
+
+# Imposta il sistema operativo, la versione di Python e altri strumenti di cui potresti aver bisogno
+costruire:
+  os: gratuito-22.04
+  utensili:
+    pitone: "3.12"
+    # Puoi anche specificare altre versioni dello strumento:
+    # nodojs: "19"
+    # ruggine: "1.64"
+    #golang: "1.19"
+
+# Crea la documentazione nella directory "docs/" con Sphinx
+sfinge:
+  configurazione: docs/conf.py
+
+# Facoltativamente, crea i tuoi documenti in formati aggiuntivi come PDF ed ePub
+# formati:
+# - PDF
+# - epub
+
+# Facoltativo ma consigliato, dichiara i requisiti Python richiesti
+# per creare la tua documentazione
+# Vedi https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html
+# pitone:
+# installa:
+# - requisiti: docs/requirements.txt
